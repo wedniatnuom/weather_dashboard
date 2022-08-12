@@ -14,9 +14,9 @@
   <header class="d-flex justify-content-center display-4">Weather Dashboard</header>
 <div id="d0" class="d-flex h-100 w-100">
   <div id="d1" class="d-flex flex-column vh-100 w-25">
-    <form onsubmit="runClick()">
+    <form id="form-submit">
       <input type="text" id="cityName" class="text-center font-italic" placeholder="Enter City" value="Orem"></textarea>
-      <button type="button" id="search" onclick="runClick()">Search</button>
+      <button type="submit" id="search" >Search</button>
     </form>
     
     </p>
@@ -34,15 +34,40 @@
 
     </div>
     <div id="d4" class="d-flex h-50 bg-info">
-      <div id="d5" class="d-flex flex-fill p-1 border">5
+      <div id="d5" class="d-flex flex-column flex-fill p-1 border">
+        <h3 id="d1date">DATE</h3>
+        <img id="d1image"></img>
+        <p id="d1temp">TEMP</p>
+        <P id="d1wind">WIND</P>
+        <P id="d1humid">HUMIDITY</P>
       </div>
-      <div id="d6" class="d-flex flex-fill p-1 border">6
+      <div id="d6" class="d-flex flex-column flex-fill p-1 border">
+        <h3 id="d2date">DATE</h3>
+        <img id="d2image"></img>
+        <p id="d2temp">TEMP</p>
+        <P id="d2wind">WIND</P>
+        <P id="d2humid">HUMIDITY</P>
       </div>
-      <div id="d7" class="d-flex flex-fill p-1 border">7
+      <div id="d7" class="d-flex flex-column flex-fill p-1 border">
+        <h3 id="d3date">DATE</h3>
+        <img id="d3image"></img>
+        <p id="d3temp">TEMP</p>
+        <P id="d3wind">WIND</P>
+        <P id="d3humid">HUMIDITY</P>
       </div>
-      <div id="d8" class="d-flex flex-fill p-1 border">8
+      <div id="d8" class="d-flex flex-column flex-fill p-1 border">
+        <h3 id="d4date">DATE</h3>
+        <img id="d4image"></img>
+        <p id="d4temp">TEMP</p>
+        <P id="d4wind">WIND</P>
+        <P id="d4humid">HUMIDITY</P>
       </div>
-      <div id="d9" class="d-flex flex-fill p-1 border">9
+      <div id="d9" class="d-flex flex-column flex-fill p-1 border">
+        <h3 id="d5date">DATE</h3>
+        <img id="d5image"></img>
+        <p id="d5temp">TEMP</p>
+        <P id="d5wind">WIND</P>
+        <P id="d5humid">HUMIDITY</P>
       </div>
 
     </div>
@@ -52,7 +77,9 @@
 </div>
 
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
   <script src="./script.js"></script>
 </body>
 
