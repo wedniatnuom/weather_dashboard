@@ -5,6 +5,12 @@ var search = document.getElementById("search");
 async function runClick(cityName){
     const city = document.getElementById("cityName").value;
     let cityData = await findCity(city);
+    let mainCity = document.getElementById("mainCity");
+    let mainTemp = document.getElementById("mainTemp");
+    let mainWind = document.getElementById("mainWind");
+    let mainHumid = document.getElementById("mainHumid");
+    let mainUv = document.getElementById("mainUv");
+
     console.log('city data');
     console.log(cityData);
 
@@ -14,8 +20,12 @@ async function runClick(cityName){
     return response.json()
   }).then(function(jsonData){
     console.log(jsonData);
-    
-  })
+    mainCity.textContent = cityData[0].name;
+    mainTemp.textContent = jsonData.current.temp;
+    mainWind.textContent = jsonData.current.wind_speed + " mph";
+    mainHumid.textContent = jsonData.current.humidity;
+    mainUv.textContent = jsonData.current.uvi;
+  });
 }
 
 async function findCity(city) {
@@ -28,6 +38,8 @@ async function findCity(city) {
   });
   return cityResponse;  
 }
+
+
 
 "http://api.openweathermap.org/geo/1.0/direct?q=Orem,1&limit=1&appid=fe1835b3950936d6d47152d4217daee1"
 
