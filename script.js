@@ -2,30 +2,31 @@ var search = document.getElementById("search");
 
 
 
-function runClick(cityName){
+async function runClick(cityName){
     const city = document.getElementById("cityName").value;
-    findCity(city);
-    console.log(city);
+    let cityData = await findCity(city);
+    console.log('city data');
+    console.log(cityData);
 
 
-//     fetch("https://api.openweathermap.org/data/2.5/onecall?&exclude=minutely,hourly,alerts&appid=fe1835b3950936d6d47152d4217daee1"
-//   ).then(function(response) {
-//     console.log(response);
-//   });
+    fetch("https://api.openweathermap.org/data/2.5/onecall?lat=" + cityData[0].lat +"&lon=" + cityData[0].lon +"&exclude=minutely,hourly,alerts&appid=fe1835b3950936d6d47152d4217daee1"
+  ).then(function(response) {
+    return response.json()
+  }).then(function(jsonData){
+    console.log(jsonData);
+    
+  })
 }
 
-function findCity(city) {
-    console.log(city);
-       fetch("http://api.openweathermap.org/geo/1.0/direct?q=" + city + ",1&limit=1&appid=fe1835b3950936d6d47152d4217daee1")
-       .then((response) => {
-        console.log(response);
-        return response.json();
-        
-    })
-       .then(data => console.log(data));
-
-       
-   
+async function findCity(city) {
+  let cityResponse;
+  await fetch("http://api.openweathermap.org/geo/1.0/direct?q=" + city + ",1&limit=1&appid=fe1835b3950936d6d47152d4217daee1")
+  .then((response) => {
+    return response.json();})
+  .then(data => {
+    cityResponse = data;
+  });
+  return cityResponse;  
 }
 
 "http://api.openweathermap.org/geo/1.0/direct?q=Orem,1&limit=1&appid=fe1835b3950936d6d47152d4217daee1"

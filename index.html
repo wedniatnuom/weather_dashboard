@@ -14,8 +14,10 @@
   <header class="d-flex justify-content-center display-4">Weather Dashboard</header>
 <div id="d0" class="d-flex h-100 w-100">
   <div id="d1" class="d-flex flex-column vh-100 w-25">
-    <textarea id="cityName" class="text-center font-italic" placeholder="Enter City">Orem</textarea>
-    <button type="button" id="search" onclick="runClick()">Search</button>
+    <form onsubmit="runClick()">
+      <input type="text" id="cityName" class="text-center font-italic" placeholder="Enter City" value="Orem"></textarea>
+      <button type="button" id="search" onclick="runClick()">Search</button>
+    </form>
     
     </p>
     <b></b>
