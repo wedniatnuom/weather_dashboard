@@ -102,14 +102,7 @@ async function runClick(event, cityName){
     } else if(jsonData.current.uvi > 6) {
       mainUv.classList.add("bg-danger")
     }
-      
-
-
   });
-  
-  
-
-  
 }
 
 async function findCity(city) {
@@ -122,11 +115,3 @@ async function findCity(city) {
   });
   return cityResponse;  
 }
-
-
-
-"http://api.openweathermap.org/geo/1.0/direct?q=Orem,1&limit=1&appid=fe1835b3950936d6d47152d4217daee1"
-
-
-
-// " + ValueFromFindCity + "
