@@ -13,61 +13,59 @@
 <body>
   <header class="d-flex justify-content-center display-4">Weather Dashboard</header>
 <div id="d0" class="d-flex h-100 w-100">
-  <div id="d1" class="d-flex flex-column vh-100 w-25">
+  <div id="d1" class="d-flex flex-column w-25 border border-dark rounded m-1 p-1">
     <form id="form-submit">
-      <input type="text" id="cityName" class="text-center font-italic" placeholder="Enter City" value="Orem"></textarea>
+      <input type="text" id="cityName" class="text-center font-italic" placeholder="Enter City, State" ></textarea>
       <button type="submit" id="search" >Search</button>
     </form>
-    
-    </p>
-    <b></b>
+    <div id="button-container">
 
-
+    </div>
   </div>
-  <div id="d2" class="d-flex vh-100 w-75 flex-column bg-success">
-    <div id="d3" class="d-flex flex-column h-50 bg-danger">
+  <div id="d2" class="d-flex vh-100 w-75 flex-column">
+    <div id="d3" class="d-flex flex-column bg-light p-3 border border-dark rounded m-1">
       <h3>City: <span id="mainCity"></span></h3>
       <p>Temperature: <span id="mainTemp"></span></p>
       <p>Wind: <span id="mainWind"></span></p>
       <p>Humidity: <span id="mainHumid"></span></p>
-      <p>UV Index: <span id="mainUv"></span></p>
+      <p>UV Index: <span id="mainUv" class=""></span></p>
 
     </div>
-    <div id="d4" class="d-flex h-50 bg-info">
-      <div id="d5" class="d-flex flex-column flex-fill p-1 border">
-        <h3 id="d1date">DATE</h3>
+    <div id="d4" class="d-flex ">
+      <div id="d5" class="d-flex flex-column flex-fill border border-dark rounded m-1 p-1">
+        <h3 id="d1date"></h3>
         <img id="d1image"></img>
-        <p id="d1temp">TEMP</p>
-        <P id="d1wind">WIND</P>
-        <P id="d1humid">HUMIDITY</P>
+        <p id="d1temp"></p>
+        <P id="d1wind"></P>
+        <P id="d1humid"></P>
       </div>
-      <div id="d6" class="d-flex flex-column flex-fill p-1 border">
-        <h3 id="d2date">DATE</h3>
+      <div id="d6" class="d-flex flex-column flex-fill border border-dark rounded m-1 p-1">
+        <h3 id="d2date"></h3>
         <img id="d2image"></img>
-        <p id="d2temp">TEMP</p>
-        <P id="d2wind">WIND</P>
-        <P id="d2humid">HUMIDITY</P>
+        <p id="d2temp"></p>
+        <P id="d2wind"></P>
+        <P id="d2humid"></P>
       </div>
-      <div id="d7" class="d-flex flex-column flex-fill p-1 border">
-        <h3 id="d3date">DATE</h3>
+      <div id="d7" class="d-flex flex-column flex-fill border border-dark rounded m-1 p-1">
+        <h3 id="d3date"></h3>
         <img id="d3image"></img>
-        <p id="d3temp">TEMP</p>
-        <P id="d3wind">WIND</P>
-        <P id="d3humid">HUMIDITY</P>
+        <p id="d3temp"></p>
+        <P id="d3wind"></P>
+        <P id="d3humid"></P>
       </div>
-      <div id="d8" class="d-flex flex-column flex-fill p-1 border">
-        <h3 id="d4date">DATE</h3>
+      <div id="d8" class="d-flex flex-column flex-fill border border-dark rounded m-1 p-1">
+        <h3 id="d4date"></h3>
         <img id="d4image"></img>
-        <p id="d4temp">TEMP</p>
-        <P id="d4wind">WIND</P>
-        <P id="d4humid">HUMIDITY</P>
+        <p id="d4temp"></p>
+        <P id="d4wind"></P>
+        <P id="d4humid"></P>
       </div>
-      <div id="d9" class="d-flex flex-column flex-fill p-1 border">
-        <h3 id="d5date">DATE</h3>
+      <div id="d9" class="d-flex flex-column flex-fill border border-dark rounded m-1 p-1">
+        <h3 id="d5date"></h3>
         <img id="d5image"></img>
-        <p id="d5temp">TEMP</p>
-        <P id="d5wind">WIND</P>
-        <P id="d5humid">HUMIDITY</P>
+        <p id="d5temp"></p>
+        <P id="d5wind"></P>
+        <P id="d5humid"></P>
       </div>
 
     </div>

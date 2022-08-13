@@ -3,3 +3,41 @@ header {
     line-height: 1;
     background-color: rgb(159, 202, 243);
 }
+
+body {
+    background-color: rgb(159, 202, 243);
+}
+
+#d1 {
+    height: 615px;
+    background-color:rgb(77, 147, 212);
+}
+
+#d3 {
+    height: 30%;
+}
+
+#d4 {
+    height: 35%;
+
+}
+
+#d5 {
+    background-color: rgb(59, 112, 161);
+}
+
+#d6 {
+    background-color: rgb(59, 112, 161);
+}
+
+#d7 {
+    background-color: rgb(59, 112, 161);
+}
+
+#d8 {
+    background-color: rgb(59, 112, 161);
+}
+
+#d9 {
+    background-color: rgb(59, 112, 161);
+}
