@@ -114,7 +114,7 @@ async function runClick(event, cityName){
 
 async function findCity(city) {
   let cityResponse;
-  await fetch("http://api.openweathermap.org/geo/1.0/direct?q=" + city + ",1&limit=1&appid=fe1835b3950936d6d47152d4217daee1")
+  await fetch("https://api.openweathermap.org/geo/1.0/direct?q=" + city + ",1&limit=1&appid=fe1835b3950936d6d47152d4217daee1")
   .then((response) => {
     return response.json();})
   .then(data => {
